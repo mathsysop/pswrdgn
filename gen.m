@@ -1,4 +1,7 @@
- 
+ (* Length is the Length of the password, num is the number you want, \
+ and similar=1 if you want similar characters, 0 if not. True and \
+ False, should work in place of 1/0 *)
+
 pwgen[length_Integer: 5, num_Integer: 1, similars_Boolean: 1] := 
  pwgenerator[length, num, similars] = 
   Module[{list, valid, validchars, similar, k, j, password, pwlist, 
